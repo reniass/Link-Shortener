@@ -7,10 +7,16 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/links")
 public class LinkManageController {
 
+    private final LinkService service;
+
+    public LinkManageController(LinkService service) {
+        this.service = service;
+    }
+
     @PostMapping
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     LinkDto createLink(@RequestBody CreateLinkDto link) {
-        return link.toDto();
+        return service.createLink(link.toDto());
     }
 }

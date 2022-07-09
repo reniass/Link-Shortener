@@ -13,10 +13,16 @@ import java.io.IOException;
 @RequestMapping("/s")
 public class RedirectController {
 
+    private final LinkService linkService;
+
+    public RedirectController(LinkService linkService) {
+        this.linkService = linkService;
+    }
+
     @GetMapping("/{id}")
     public void redirectLink(@PathVariable("id") String id,
                              HttpServletResponse httpServletResponse
                              ) throws IOException {
-        httpServletResponse.sendRedirect("http://google.com");
+        httpServletResponse.sendRedirect(linkService.getLink(id));
     }
 }
