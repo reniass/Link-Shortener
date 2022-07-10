@@ -8,4 +8,6 @@ public interface LinkService {
     LinkDto createLink(LinkDto toDto);
 
     String getLink(String id);
+
+    LinkDto getLinkDto(String id);
 }
