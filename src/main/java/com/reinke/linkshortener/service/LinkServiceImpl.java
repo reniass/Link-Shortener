@@ -1,12 +1,14 @@
-package com.reinke.linkshortener;
+package com.reinke.linkshortener.service;
 
+import com.reinke.linkshortener.exception.LinkAlreadyExistException;
+import com.reinke.linkshortener.dto.LinkDto;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class LinkServiceImpl implements LinkService{
+public class LinkServiceImpl implements LinkService {
 
     private Map<String, LinkDto> dtoMap = new HashMap<>();
 

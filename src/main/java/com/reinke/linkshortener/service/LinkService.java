@@ -1,4 +1,6 @@
-package com.reinke.linkshortener;
+package com.reinke.linkshortener.service;
+
+import com.reinke.linkshortener.dto.LinkDto;
 
 public interface LinkService {
 

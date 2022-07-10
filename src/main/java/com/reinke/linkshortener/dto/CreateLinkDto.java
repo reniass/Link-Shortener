@@ -1,6 +1,6 @@
-package com.reinke.linkshortener;
+package com.reinke.linkshortener.dto;
 
-import io.swagger.v3.oas.annotations.media.Schema;
+import com.reinke.linkshortener.dto.LinkDto;
 
 import java.time.LocalDate;
 
@@ -18,7 +18,7 @@ public class CreateLinkDto {
         this.id = id;
     }
 
-    LinkDto toDto() {
+    public LinkDto toDto() {
         return new LinkDto(id,
                 expirationDate,
                 0,

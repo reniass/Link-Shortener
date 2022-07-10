@@ -1,4 +1,4 @@
-package com.reinke.linkshortener;
+package com.reinke.linkshortener.dto;
 
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 

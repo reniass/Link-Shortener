@@ -1,9 +1,11 @@
 package com.reinke.linkshortener;
 
+import com.reinke.linkshortener.dto.LinkDto;
+import com.reinke.linkshortener.exception.LinkAlreadyExistException;
+import com.reinke.linkshortener.service.LinkService;
+import com.reinke.linkshortener.service.LinkServiceImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class LinkServiceImplTest {
 

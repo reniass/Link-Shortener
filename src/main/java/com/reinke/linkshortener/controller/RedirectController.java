@@ -1,6 +1,6 @@
-package com.reinke.linkshortener;
+package com.reinke.linkshortener.controller;
 
-import org.springframework.stereotype.Controller;
+import com.reinke.linkshortener.service.LinkService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

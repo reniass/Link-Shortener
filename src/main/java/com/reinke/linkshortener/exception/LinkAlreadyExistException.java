@@ -1,4 +1,4 @@
-package com.reinke.linkshortener;
+package com.reinke.linkshortener.exception;
 
 public class LinkAlreadyExistException extends RuntimeException{
 
